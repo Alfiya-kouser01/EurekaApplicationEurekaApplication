@@ -5,6 +5,9 @@ server:
   port: 8760
 
 eureka:
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
   client:
     fetch-registry: false  # This is a standalone Eureka server
     register-with-eureka: false  # This server doesn’t register with another Eureka server
